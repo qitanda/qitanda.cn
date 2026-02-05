@@ -27,7 +27,7 @@ Education
   <br>
   S Luo\*, P Sun\*, **J Zhu**\*, Y Deng, C Yu, A Xiao, X Wang
   <br>
-  RAL, 2025, <a href="https://github.com/lsylsy0516/GSON">code</a>, <a href="https://arxiv.org/abs/2409.18084">[Paper]</a>, <a href="https://www.youtube.com/watch?v=mqkMAY0yAAk">[Video]</a>
+  RAL, 2025, <a href="https://github.com/lsylsy0516/GSON">[code]</a>, <a href="https://arxiv.org/abs/2409.18084">[Paper]</a>, <a href="https://www.youtube.com/watch?v=mqkMAY0yAAk">[Video]</a>
 
 > \* equal contribution
 
