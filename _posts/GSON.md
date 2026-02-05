@@ -1,0 +1,14 @@
+---
+title: 'GSON: A Group-based Social Navigation Framework with Large Multimodal Model'
+date: 2025-07
+permalink: /projects/GSON
+tags:
+  - Social Navigation
+  - Multimodal Large Language Model
+  - Path Planning
+header:
+  teaser: projects/GSON/pipeline.png
+---
+
+GSON, a novel group-based social navigation framework that leverages Large Multimodal Models (LMMs) to enhance robots’ social perception capabilities. Our approach uses visual prompting to enable zero-shot extraction of social relationships among pedestrians and integrates these results with robust pedestrian detection and tracking pipelines to overcome the inherent inference speed limitations of LMMs.
+
