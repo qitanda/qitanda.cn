@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 {% include base_path %}
-<div class="feature__wrapper">
+<div class="feature__wrapper projects__wrapper">
   {% for post in site.posts reversed %}
     {% if post.header.teaser %}
       {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
