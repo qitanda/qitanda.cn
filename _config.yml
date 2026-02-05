@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Your Name / Site Title"
+title                    : "Ji Zhu"
 title_separator          : "-"
 name                     : &name "Ji Zhu"
 description              : &description "Robotics & Embodied Intelligence"   # Update this with a general description of your site, this is the default if not overridden by a page
@@ -26,7 +26,7 @@ author:
   avatar           : "profile.png"
   name             : "Ji Zhu"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "Robotics & Embodied Intelligence"
   location         : "China, Shenzhen"
   employer         : "Harbin Institute of Technology, Shenzhen"
   uri              : # URL
