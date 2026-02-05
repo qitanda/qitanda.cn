@@ -8,8 +8,44 @@ redirect_from:
 ---
 
 {% include base_path %}
-<div class="grid__wrapper">
+<div class="feature__wrapper">
   {% for post in site.posts reversed %}
-    {% include archive-single.html type="grid" %}
+    {% if post.header.teaser %}
+      {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
+    {% else %}
+      {% assign teaser = site.teaser %}
+    {% endif %}
+
+    <div class="feature__item--left">
+      <div class="archive__item">
+        {% if teaser %}
+          <div class="archive__item-teaser">
+            <a href="{{ base_path }}{{ post.url }}" rel="permalink">
+              <img src=
+                {% if teaser contains "://" %}
+                  "{{ teaser }}"
+                {% else %}
+                  "{{ teaser | prepend: "/images/" | prepend: base_path }}"
+                {% endif %}
+                alt="">
+            </a>
+          </div>
+        {% endif %}
+
+        <div class="archive__item-body">
+          <h2 class="archive__item-title" itemprop="headline">
+            <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>
+          </h2>
+
+          {% if post.excerpt %}
+            <div class="archive__item-excerpt" itemprop="description">
+              {{ post.excerpt | markdownify }}
+            </div>
+          {% endif %}
+
+          <p><a href="{{ base_path }}{{ post.url }}" class="btn">Learn More</a></p>
+        </div>
+      </div>
+    </div>
   {% endfor %}
 </div>
