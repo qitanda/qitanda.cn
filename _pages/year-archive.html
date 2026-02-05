@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 <div class="grid__wrapper">
-  {% for post in site.posts %}
+  {% for post in site.posts reversed %}
     {% include archive-single.html type="grid" %}
   {% endfor %}
 </div>
