@@ -13,7 +13,7 @@ title                    : "Ji Zhu"
 title_separator          : "-"
 name                     : &name "Ji Zhu"
 description              : &description "Robotics & Embodied Intelligence"   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      : http://qitanda.cyandyue.cn/ # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
+url                      : https://homepage.qitanda.cn # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
