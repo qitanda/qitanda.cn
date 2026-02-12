@@ -18,8 +18,8 @@ My research interests lie at the intersection of **Embodied Intelligence** and *
 Education
 =========
 
-- M.Eng. in Control Science and Engineering [@nROS-Lab](http://nrs-lab.com/), Harbin Institute of Technology, Shenzhen (HIT), 2025/09-present
-- B.Eng. in Automation, Harbin Institute of Technology, Shenzhen (HIT), 2021/09-2025/06
+- M.Eng. in Control Science and Engineering [@nROS-Lab](http://nrs-lab.com/), Harbin Institute of Technology, Shenzhen (HITSZ), 2025/09 - present
+- B.Eng. in Automation, Harbin Institute of Technology, Shenzhen (HITSZ), 2021/09-2025/06
 
 # Publication
 
@@ -36,6 +36,10 @@ Education
 - **Outstanding Graduates of 2025**
 - **National Scholarships for Bachelor Students of 2024**
 - Champion, 2nd **CMU Vision-Language-Autonomy Challenge**, IROS 2025
-- First Prize in **National Smart Car Competition**， 2024
+- First Prize in **National Smart Car Competition**, 2024
 - Second Prize for **Robomaster University Sim2Real Challenge**, ICRA 2024
-- Second Prize for **Robomaster Unmanned Aerial Vehicle Intelligent Sensing Technology Competition**，2023
+- Second Prize for **Robomaster Unmanned Aerial Vehicle Intelligent Sensing Technology Competition**, 2023
+
+# Internship
+
+- Dexterous Algorithm Intern, [@**Stella Robot**](https://www.stella-robot.com/), Shenzhen, China, 2025/06 - 2025/09

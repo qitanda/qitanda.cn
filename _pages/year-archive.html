@@ -18,20 +18,6 @@ redirect_from:
 
     <div class="feature__item--left">
       <div class="archive__item">
-        {% if teaser %}
-          <div class="archive__item-teaser">
-            <a href="{{ base_path }}{{ post.url }}" rel="permalink">
-              <img src=
-                {% if teaser contains "://" %}
-                  "{{ teaser }}"
-                {% else %}
-                  "{{ teaser | prepend: "/images/" | prepend: base_path }}"
-                {% endif %}
-                alt="">
-            </a>
-          </div>
-        {% endif %}
-
         <div class="archive__item-body">
           <h2 class="archive__item-title" itemprop="headline">
             <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>
@@ -45,6 +31,20 @@ redirect_from:
 
           <p><a href="{{ base_path }}{{ post.url }}" class="btn">Learn More</a></p>
         </div>
+
+        {% if teaser %}
+          <div class="archive__item-teaser">
+            <a href="{{ base_path }}{{ post.url }}" rel="permalink">
+              <img src=
+                {% if teaser contains "://" %}
+                  "{{ teaser }}"
+                {% else %}
+                  "{{ teaser | prepend: "/images/" | prepend: base_path }}"
+                {% endif %}
+                alt="">
+            </a>
+          </div>
+        {% endif %}
       </div>
     </div>
   {% endfor %}
