@@ -19,7 +19,7 @@ Education
 =========
 
 - M.Eng. in Control Science and Engineering [@nROS-Lab](http://nrs-lab.com/), Harbin Institute of Technology, Shenzhen (HITSZ), 2025/09 - present
-- B.Eng. in Automation, Harbin Institute of Technology, Shenzhen (HITSZ), 2021/09-2025/06
+- B.Eng. in Automation, Harbin Institute of Technology, Shenzhen (HITSZ), 2021/09 - 2025/06
 
 # Publication
 
@@ -35,11 +35,11 @@ Education
 
 - **Outstanding Graduates of 2025**
 - **National Scholarships for Bachelor Students of 2024**
-- Champion, 2nd **CMU Vision-Language-Autonomy Challenge**, IROS 2025
+- Champion, 2nd [**CMU Vision-Language-Autonomy Challenge**](https://www.ai-meets-autonomy.com/cmu-vla-challenge), IROS 2025
 - First Prize in **National Smart Car Competition**, 2024
-- Second Prize for **Robomaster University Sim2Real Challenge**, ICRA 2024
-- Second Prize for **Robomaster Unmanned Aerial Vehicle Intelligent Sensing Technology Competition**, 2023
+- Second Prize for [**Robomaster University Sim2Real Challenge**](http://www.sim2real.net/track/track/?nav=RMUS2024&type=nav&t=1704350997972), ICRA 2024
+- Second Prize for [**Robomaster RMUA——Unmanned Aerial Vehicle Intelligent Sensing Technology Competition**](https://www.robomaster.com/zh-CN/robo/drone?djifrom=nav), 2023
 
 # Internship
 
-- Dexterous Algorithm Intern, [@**Stella Robot**](https://www.stella-robot.com/), Shenzhen, China, 2025/06 - 2025/09
+- Dexterous Algorithm Intern, [**Stella Robot**](https://www.stella-robot.com/), Shenzhen, China, 2025/06 - 2025/09
