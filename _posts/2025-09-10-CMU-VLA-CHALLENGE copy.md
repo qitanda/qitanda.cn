@@ -15,6 +15,7 @@ header:
 We independently designed a large-scale visual language action model algorithm framework, overcoming several key technologies such as scene understanding based on natural language commands, object spatial semantic recognition, and autonomous motion trajectory planning for robots. This enabled autonomous generation and task execution of navigation actions based on semantic and spatial relationships in unknown environments. The algorithm was comprehensively evaluated and validated in both the Unity simulation environment system and a real robot platform, breaking through the bottlenecks of generalization and autonomy in real-world scenarios. Its outstanding performance earned it dual championships in both the simulation environment and physical platform competitions.
 
 ## Overview
+[Challenge Website](https://www.ai-meets-autonomy.com/cmu-vla-challenge)
 ![Pipeline](/images/projects/CMU-VLA-CHALLENGE/result.png)
 
 ## Demo Video
