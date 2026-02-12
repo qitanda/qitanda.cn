@@ -31,13 +31,24 @@
   .archive__item-teaser {
     max-height: none;
     overflow: hidden;
-    margin-top: 1em;
     img {
       display: block;
       width: 100%;
-      height: auto;
-      object-fit: contain;
+      height: 280px;
+      object-fit: cover;
       object-position: center;
+    }
+  }
+
+  @include breakpoint($small) {
+    .archive__item-teaser img {
+      height: 320px;
+    }
+  }
+
+  @include breakpoint($medium) {
+    .archive__item-teaser img {
+      height: 260px;
     }
   }
 }

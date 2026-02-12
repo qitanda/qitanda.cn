@@ -2,7 +2,7 @@
 title: 'Champion of CMU Vision-Language-Autonomy Challenge'
 date: 2025-09-10
 permalink: /projects/CMU-VLA-CHALLENGE/
-excerpt: "Independently developed a VLA framework for semantic navigation in unknown environments, overcoming generalization bottlenecks. Validated via Sim-to-Real, the system won dual championships in both simulation and physical robot tracks."
+excerpt: "Developed a VLA framework for semantic navigation in indoor environments, overcoming generalization bottlenecks. Validated via Sim-to-Real, the system won dual championships in both simulation and physical robot tracks."
 tags:
   - Vision Language Navigation
   - Path Planning
@@ -19,8 +19,8 @@ We independently designed a large-scale visual language action model algorithm f
 
 ## Demo Video
 <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/watch?v=mqkMAY0yAAk" frameborder="0" allowfullscreen></iframe> -->
-<iframe width="100%" height="320"
-  src="https://youtu.be/DmPtxXcwUDU"
+<iframe width="480" height="320"
+  src="https://www.youtube.com/embed/DmPtxXcwUDU"
   frameborder="0"
   allowfullscreen>
 </iframe>

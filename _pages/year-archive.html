@@ -18,20 +18,6 @@ redirect_from:
 
     <div class="feature__item--left">
       <div class="archive__item">
-        <div class="archive__item-body">
-          <h2 class="archive__item-title" itemprop="headline">
-            <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>
-          </h2>
-
-          {% if post.excerpt %}
-            <div class="archive__item-excerpt" itemprop="description">
-              {{ post.excerpt | markdownify }}
-            </div>
-          {% endif %}
-
-          <p><a href="{{ base_path }}{{ post.url }}" class="btn">Learn More</a></p>
-        </div>
-
         {% if teaser %}
           <div class="archive__item-teaser">
             <a href="{{ base_path }}{{ post.url }}" rel="permalink">
@@ -45,6 +31,20 @@ redirect_from:
             </a>
           </div>
         {% endif %}
+
+        <div class="archive__item-body">
+          <h2 class="archive__item-title" itemprop="headline">
+            <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>
+          </h2>
+
+          {% if post.excerpt %}
+            <div class="archive__item-excerpt" itemprop="description">
+              {{ post.excerpt | markdownify }}
+            </div>
+          {% endif %}
+
+          <p><a href="{{ base_path }}{{ post.url }}" class="btn">Learn More</a></p>
+        </div>
       </div>
     </div>
   {% endfor %}
