@@ -23,6 +23,12 @@ Education
 
 # Publication
 
+- **CA-WAM: Learning Contact-Aware World Action Models via Force Prediction for Robot Manipulation**
+  <br>
+  **J Zhu**, Y Xie, Y Wu, Y Cao, H Chen
+  <br>
+  Under review, <a href="https://anonymous.4open.science/r/7D35/index.html">[Project]</a>, <a href="{{ '/files/CA-WAM/paper.pdf' | relative_url }}">[Paper]</a>
+
 - **GSON: A Group-based Social Navigation Framework with Large Multimodal Model**
   <br>
   S Luo\*, P Sun\*, **J Zhu**\*, Y Deng, C Yu, A Xiao, X Wang
