@@ -9,7 +9,8 @@ redirect_from:
 
 {% include base_path %}
 <div class="feature__wrapper projects__wrapper">
-  {% for post in site.posts reversed %}
+  {% assign ordered_projects = site.posts | sort: 'project_order' %}
+  {% for post in ordered_projects %}
     {% if post.header.teaser %}
       {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
     {% else %}

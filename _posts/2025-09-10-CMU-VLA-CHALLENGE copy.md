@@ -1,31 +1,86 @@
 ---
-title: 'Champion of CMU Vision-Language-Autonomy Challenge'
+title: 'CMU Vision-Language-Navigation Challenge'
 date: 2025-09-10
 permalink: /projects/CMU-VLA-CHALLENGE/
-excerpt: "Developed a VLA framework for semantic navigation in indoor environments, overcoming generalization bottlenecks. Validated via Sim-to-Real, the system won dual championships in both simulation and physical robot tracks."
+excerpt: "Champion in both simulation and real-robot tracks. A vision-language navigation system combining multimodal frontier exploration, scene-graph reasoning, and instruction-guided navigation."
 tags:
   - Vision Language Navigation
   - Path Planning
   - Semantic Perception
 author_profile: false
+read_time: false
+share: false
 header:
-  teaser: projects/CMU-VLA-CHALLENGE/result.png
+  teaser: projects/CMU-VLA-CHALLENGE/reasoning.png
+project_order: 4
 ---
 
-We independently designed a large-scale visual language action model algorithm framework, overcoming several key technologies such as scene understanding based on natural language commands, object spatial semantic recognition, and autonomous motion trajectory planning for robots. This enabled autonomous generation and task execution of navigation actions based on semantic and spatial relationships in unknown environments. The algorithm was comprehensively evaluated and validated in both the Unity simulation environment system and a real robot platform, breaking through the bottlenecks of generalization and autonomy in real-world scenarios. Its outstanding performance earned it dual championships in both the simulation environment and physical platform competitions.
+## Problem and Tasks
 
-## Overview
-[Challenge Website](https://www.ai-meets-autonomy.com/cmu-vla-challenge)
-![Pipeline](/images/projects/CMU-VLA-CHALLENGE/result.png)
+The challenge requires a robot to interpret natural-language requests, explore an initially unknown environment, and reason about objects and their spatial relationships. Inputs include **instructions, RGB observations, LiDAR, odometry, and object information**.
 
-## Demo Video
-<!-- <iframe width="100%" height="100%" src="https://www.youtube.com/watch?v=mqkMAY0yAAk" frameborder="0" allowfullscreen></iframe> -->
-<iframe width="480" height="320"
-  src="https://www.youtube.com/embed/DmPtxXcwUDU"
-  frameborder="0"
-  allowfullscreen>
-</iframe>
+![Problem definition and examples of numerical, object-reference, and instruction-following tasks](/images/projects/CMU-VLA-CHALLENGE/problem.png)
 
-## Details
-The CMU Vision-Language-Autonomy Challenge leverages computer vision and natural language understanding in navigation autonomy. The challenge aims at pushing the limit of embodied AI in real environments and on real robots - providing a robot platform and a working autonomy system to bring higher-level reasoning and learning models a step closer to real-world deployment. 
-The characteristic of the challenge is to develop a model that takes in natural language queries or commands about a scene and generate the appropriate navigation-based response through reasoning about semantic and spatial relationships. The environment is initially unknown and the system will have to navigate to appropriate viewpoints to discover and validate the spatial relations and attributes. A real-robot system equipped with a 3D LiDAR and a 360 camera is provided, which has base autonomy onboard that can estimate the sensor pose, analyze the terrain, avoid collisions, and navigate to waypoints. Teams will develop a reasoning module for the robot's onboard computer to interface with the system and navigate the robot. 
+The system addresses three task types:
+
+- **Numerical reasoning:** count objects satisfying spatial constraints, such as blue chairs between a table and a wall.
+- **Object reference:** identify an object through multiple relations, such as the orange chair between a table and a sink that is closest to a window.
+- **Instruction following:** complete an ordered sequence of navigation goals using object and spatial descriptions.
+
+## Overall Pipeline
+
+![Overall reasoning and navigation pipelines](/images/projects/CMU-VLA-CHALLENGE/overview.png)
+
+Reasoning tasks proceed through problem identification and goal-graph construction, exploration, scene-graph matching and object grounding, then answer generation. Navigation tasks additionally decompose the instruction into subtasks and repeatedly identify and navigate to the next target.
+
+## Multimodal Exploration
+
+![BLIP-based view-language similarity and frontier scoring pipeline](/images/projects/CMU-VLA-CHALLENGE/exploration.png)
+
+The panoramic image is projected into **12 viewpoints**. BLIP estimates view-language similarity to the instruction, while LiDAR and odometry support frontier mapping. The resulting scores guide the planning and control module toward regions relevant to the target.
+
+## Spatial Reasoning and Object Grounding
+
+![Qwen3, scene-graph memory, perception, and planning architecture](/images/projects/CMU-VLA-CHALLENGE/reasoning.png)
+
+**Qwen3** identifies the problem, builds the goal graph, and produces the answer. Perception maintains an instance map and constructs a scene graph from RGB, LiDAR, odometry, and object information. Graph matching connects the requested relations, such as **on** and **near**, to observed objects. Multimodal frontier scoring guides further exploration when additional evidence is needed.
+
+## Instruction-Guided Navigation
+
+![Three navigation strategies using Grounded SAM, visual waypoint selection, and frontier scoring](/images/projects/CMU-VLA-CHALLENGE/navigation.png)
+
+![Instruction-guided navigation pipeline](/images/projects/CMU-VLA-CHALLENGE/result.png)
+
+The navigation module combines three strategies: **Grounded SAM** builds scene-graph information about distant objects; numbered waypoints projected onto images let the VLM select a navigation target; view-language similarity updates frontier priorities during exploration.
+
+## Demo Videos
+
+### Spatial Reasoning
+
+<video controls playsinline preload="none" poster="/images/projects/CMU-VLA-CHALLENGE/reasoning-poster.jpg" style="width:100%;height:auto;" aria-label="Spatial reasoning demonstration">
+  <source src="/files/CMU-VLN-CHALLENGE/reasoning.mp4" type="video/mp4">
+  <a href="/files/CMU-VLN-CHALLENGE/reasoning.mp4">Watch the spatial reasoning demonstration</a>.
+</video>
+
+*Spatial reasoning demonstration from slide 9.*
+
+### Instruction-Guided Navigation
+
+<video controls playsinline preload="none" poster="/images/projects/CMU-VLA-CHALLENGE/navigation-poster.jpg" style="width:100%;height:auto;" aria-label="Instruction-guided navigation with instruction and task breakdown">
+  <source src="/files/CMU-VLN-CHALLENGE/navigation.mp4" type="video/mp4">
+  <a href="/files/CMU-VLN-CHALLENGE/navigation.mp4">Watch the navigation demonstration</a>.
+</video>
+
+*Navigation demonstration from slide 12, with the instruction and task breakdown preserved alongside the robot view: approach the fireplace, go to the window closest to the bookcase, and stop at the chair farthest from the mirror.*
+
+Both source clips are marked **2× speed**; no additional speed-up is applied.
+
+## Competition Result
+
+**NROS Team** ranked first in the preliminary simulation evaluation (**36.03**) and achieved the highest final score (**44.26**). [Challenge website](https://www.ai-meets-autonomy.com/cmu-vln-challenge).
+
+![2025 challenge leaderboard showing NROS Team in first place](/images/projects/CMU-VLA-CHALLENGE/leaderboard.png)
+
+[![NROS Team challenge certificate](/images/projects/CMU-VLA-CHALLENGE/certificate.png)](/files/CMU-VLN-CHALLENGE/certificate.pdf)
+
+[View the certificate PDF](/files/CMU-VLN-CHALLENGE/certificate.pdf)
