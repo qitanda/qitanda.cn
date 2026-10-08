@@ -11,8 +11,9 @@ I am currently a Graduate Student in **Control Science and Engineering** at **Ha
 Before that, I obtained my Bachelor's degree in **Automation** from **HITSZ**.
 
 My research interests lie at the intersection of **Embodied Intelligence** and **Robotics**, with a specific focus on:
+- **Robot Manipulation**
 - **Vision-Language-Action (VLA) Models**
-- **Reinforcement Learning & Robotic Manipulation**
+- **World Models (WM) and World-Action Models (WAM)**
 - **Vision-Language-Navigation (VLN) Models**
 
 Education
@@ -39,12 +40,12 @@ Education
 
 # Honors & Awards
 
-- **Outstanding Graduates of 2025**
-- **National Scholarships for Bachelor Students of 2024**
-- Champion, 2nd [**CMU Vision-Language-Autonomy Challenge**](https://www.ai-meets-autonomy.com/cmu-vla-challenge), IROS 2025
-- First Prize in **National Smart Car Competition**, 2024
-- Second Prize for [**Robomaster University Sim2Real Challenge**](http://www.sim2real.net/track/track/?nav=RMUS2024&type=nav&t=1704350997972), ICRA 2024
-- Second Prize for [**Robomaster RMUA——Unmanned Aerial Vehicle Intelligent Sensing Technology Competition**](https://www.robomaster.com/zh-CN/robo/drone?djifrom=nav), 2023
+- **Outstanding Graduates**, HITSZ, 2025
+- **National Scholarships for Bachelor Students**, 2024
+- **International Champion**, [**CMU Vision-Language-Navigation Challenge**](https://www.ai-meets-autonomy.com/cmu-vln-challenge), IROS 2025
+- **National First Prize in** [**National Smart Car Competition**](http://smartcarrace.com/), 2024
+- **International Second Prize** for [**Robomaster University Sim2Real Challenge**](http://www.sim2real.net/track/track/?nav=RMUS2024&type=nav&t=1704350997972), ICRA 2024
+- **National Second Prize** for [**Robomaster RMUA——Unmanned Aerial Vehicle Intelligent Sensing Technology Competition**](https://www.robomaster.com/zh-CN/robo/drone?djifrom=nav), 2023
 
 # Internship
 
