@@ -1,6 +1,6 @@
 ---
 title: 'Quest 3 VR Teleoperation and Data Collection System'
-date: 2026-10-08
+date: 2026-02-01
 permalink: /projects/quest3-teleoperation/
 excerpt: "A Quest 3 and ROS 2 system for dual-arm teleoperation and demonstration collection, with calibrated relative-pose mapping, Pinocchio servo integration, and controller-based gripper and dexterous-hand control."
 tags:

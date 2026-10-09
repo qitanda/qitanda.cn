@@ -1,6 +1,6 @@
 ---
 title: 'Dual-Arm Robotic Sorting of Mechanical Parts'
-date: 2026-10-08
+date: 2026-06-07
 permalink: /projects/dual-arm-sorting/
 excerpt: "Trained a π₀.₅ policy on hundreds of teleoperated demonstrations, including successful sorting and recovery from failures. Used workspace cropping to reduce background distractions and Real-Time Chunking (RTC) for continuous policy execution."
 tags:

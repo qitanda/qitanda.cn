@@ -1,6 +1,6 @@
 ---
 title: 'Dexterous Algorithm Intern in Stellar-Robot'
-date: 2025-06-06
+date: 2025-08-23
 permalink: /projects/Stellar-Robot/
 excerpt: "I joined Stellar-Robot, a company specializing in dexterous hand manufacturing, as a three-month intern specializing in dexterous hand algorithms. My main task was to reproduce advanced dexterous hand manipulation algorithms, focusing on imitation learning and reinforcement learning, and to attempt to reproduce them using a physical platform."
 tags:

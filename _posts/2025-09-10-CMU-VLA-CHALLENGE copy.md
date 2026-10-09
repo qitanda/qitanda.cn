@@ -1,6 +1,6 @@
 ---
 title: 'CMU Vision-Language-Navigation Challenge'
-date: 2025-09-10
+date: 2025-09-15
 permalink: /projects/CMU-VLA-CHALLENGE/
 excerpt: "Champion in both simulation and real-robot tracks. A vision-language navigation system combining multimodal frontier exploration, scene-graph reasoning, and instruction-guided navigation."
 tags:
