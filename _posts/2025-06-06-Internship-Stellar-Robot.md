@@ -19,7 +19,18 @@ I joined Stellar-Robot, a company specializing in dexterous hand manufacturing, 
 ## Overview
 ![Project](/images/projects/Stellar-Robot/product.png)
 
-## Demo Video
+## GeoRT-Based Hand Retargeting
+
+Building on **GeoRT**, my work focused on adapting human-hand motion retargeting to **GaiaHand and PantheonHand**. This involved configuring robot keypoints and joint mappings, calibrating fingertip offsets and hand-size scaling, and integrating training, inference, and replay visualization to check how human motions transfer to different robot hand structures.
+
+<video controls playsinline preload="none" poster="/images/projects/Stellar-Robot/retargeting-poster.jpg" style="width:100%;height:auto;" aria-label="GeoRT-based dexterous hand retargeting demonstration">
+  <source src="/files/Stellar-Robot/retargeting-demo.mp4" type="video/mp4">
+  <a href="/files/Stellar-Robot/retargeting-demo.mp4">Watch the hand retargeting demonstration</a>.
+</video>
+
+*Human-to-robot hand motion retargeting based on GeoRT.*
+
+## Dexterous Manipulation Demo
 
 <video controls playsinline preload="none" poster="/images/projects/Stellar-Robot/demo-poster.jpg" style="width:100%;height:auto;" aria-label="Four dexterous manipulation demonstrations in a two-by-two grid">
   <source src="/files/Stellar-Robot/dexterous-grid.mp4" type="video/mp4">
@@ -28,5 +39,6 @@ I joined Stellar-Robot, a company specializing in dexterous hand manufacturing, 
 
 *Four dexterous manipulation demonstrations. Each clip retains its original playback speed; shorter clips hold their final frame until the longest clip finishes.*
 
-## Details
-Specifically, my work first involved adapting and optimizing the redirection of data gloves to dexterous hands based on GeoRT. Secondly, I combined DexGarmentLab and PyTorch kinematics to build a fully connected imitation learning process for GaiaHand and PantheonHand simulation control, data acquisition, and policy training verification in Isaac Sim. Finally, I built a physical platform based on Realman-75f and GaiaHand and conducted real-world verification of imitation learning for grasping clothing.
+## Simulation and Real-Robot Integration
+
+Combined **DexGarmentLab** and **PyTorch kinematics** to connect GaiaHand and PantheonHand simulation control, data collection, and policy training and evaluation in Isaac Sim. Built a physical platform with **Realman-75f and GaiaHand** for real-world imitation-learning experiments on garment grasping.

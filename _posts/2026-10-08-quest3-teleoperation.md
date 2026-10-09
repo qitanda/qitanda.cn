@@ -26,26 +26,16 @@ Built a **Quest 3 VR teleoperation and data collection system** for robot-learni
   <a href="/files/quest3-teleoperation/demo-cropped.mp4">Watch the teleoperation demonstration</a>.
 </video>
 
-## Control Pipeline
+## ROS 2 and MoveIt 2 Framework
 
-The XR interface publishes left and right controller poses and button states. Each arm has its own mapping node, which converts controller motion into a robot-frame end-effector pose target. The servo backend consumes these targets and connects to the corresponding arm controller. Trigger and squeeze inputs independently control the end effectors.
+Built an integrated **ROS 2** framework connecting the dual-arm robot, end effectors, cameras, and VR interface. Robot descriptions and TF establish consistent coordinate frames, while **ros2_control** connects the hardware drivers to arm trajectory controllers, gripper and hand controllers, and state feedback. A shared launch setup supports both real hardware and simulated hardware interfaces for integration testing.
 
-## Calibrated Relative-Pose Mapping
+Integrated **MoveIt 2** for motion planning, planning-scene monitoring, trajectory execution, and RViz visualization. The control framework supports both MoveIt Servo and a **Pinocchio-based servo backend** for following Cartesian targets from the VR controllers.
 
-Controller translation and rotation are mapped **relative to an anchor pose**, rather than directly copying the controller's absolute position. On activation, the system records both the controller pose and the robot end-effector pose from TF, then applies calibrated coordinate transforms to subsequent motion. The calibration utility estimates the device-to-robot rotation from guided controller movements.
+## VR Teleoperation
 
-Each arm can be paused or resumed independently. The mapping node detects stale tracking data and abrupt pose changes, pauses target output, and re-establishes the anchor after stable tracking returns. This supports repositioning the operator's hands and recovering from tracking interruptions without directly applying a discontinuous target.
+Calibrated controller-to-robot coordinates and mapped relative hand motion to the two robot arms. Independent pause/resume controls, tracking-loss detection, and automatic re-anchoring help maintain continuity during operation. Trigger and grip inputs control the gripper and dexterous hand.
 
-## Pinocchio Servo Integration
+## Data Collection
 
-The workspace launches separate **Pinocchio servo backends for the left and right arms**, passing each arm's end-effector frame, pose-target topic, joint-limit configuration, and controller configuration. The default configured algorithm is **`mpc_pose_follower`**. A force-input admittance variant is also exposed as an optional configuration.
-
-Pinocchio is used in the included integration tests to load the robot URDF, compute forward kinematics and end-effector transforms, and evaluate pose errors in SE(3). This connects the robot model to Cartesian pose tracking and verification.
-
-## Gripper and Dexterous-Hand Control
-
-The controller's trigger and squeeze axes are mapped to end-effector joint commands through **bilinear interpolation**. Configurable input dead zones account for released and fully pressed controller positions. The provided mappings support an **LMG-90 gripper** and a **six-joint Inspire dexterous hand**.
-
-## Demonstration Collection
-
-The documented collection workflow runs the XR interface, robot servo, multi-camera capture, teleoperation mapping, and ROS 2 data recorder together. The camera launch includes head and wrist RGB-D views. Timing-analysis utilities inspect camera timestamps, receive-time differences, and recorded session consistency to help diagnose data quality before downstream robot learning.
+Integrated head and wrist RGB-D cameras with robot control and a ROS 2 recording workflow to collect manipulation demonstrations. Camera timestamp and receive-time checks help identify timing inconsistencies before using the recordings for robot learning.
