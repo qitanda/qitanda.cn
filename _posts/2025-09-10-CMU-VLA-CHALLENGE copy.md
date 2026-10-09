@@ -11,7 +11,7 @@ author_profile: false
 read_time: false
 share: false
 header:
-  teaser: projects/CMU-VLA-CHALLENGE/reasoning.png
+  teaser: projects/CMU-VLA-CHALLENGE/preview-trimmed.png
 project_order: 4
 ---
 
