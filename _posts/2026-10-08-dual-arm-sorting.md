@@ -21,8 +21,6 @@ Developed an automatic mechanical-part sorting system for a **dual-arm robot**, 
 
 ## Overview
 
-![Dual-arm robot sorting mechanical parts on a tabletop]({{ '/images/projects/dual-arm-sorting/policy-deployment.jpg' | relative_url }})
-
 - **Demonstration collection.** Recorded hundreds of teleoperated demonstrations, including routine successful sorting trajectories and corrective actions after failures, to provide examples of both task completion and recovery.
 - **Workspace-focused training.** Cropped visual observations to the tabletop workspace during training to reduce distractions from the surrounding environment.
 - **Policy training and deployment.** Trained π₀.₅ on the collected demonstrations and deployed the policy on the dual-arm robot with RTC.
@@ -35,6 +33,15 @@ Developed an automatic mechanical-part sorting system for a **dual-arm robot**, 
 </video>
 
 *Automatic mechanical-part sorting with the trained policy. This video is sped up and does not represent real-time execution speed.*
+
+## Policy Attention Visualization
+
+<video controls playsinline preload="none" poster="{{ '/images/projects/dual-arm-sorting/policy-attention.jpg' | relative_url }}" style="width:100%;height:auto;" aria-label="Pi zero point five attention visualization across three camera views">
+  <source src="{{ '/files/dual-arm-sorting/policy-attention.mp4' | relative_url }}" type="video/mp4">
+  <a href="{{ '/files/dual-arm-sorting/policy-attention.mp4' | relative_url }}">Watch the attention visualization</a>.
+</video>
+
+*Attention visualization of the π₀.₅ policy across the left-wrist, head, and right-wrist camera views during mechanical-part sorting.*
 
 ## Teleoperation and Data Collection
 
