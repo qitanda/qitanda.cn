@@ -26,9 +26,9 @@ My work connected hand retargeting, robot kinematics, calibrated RGB-D perceptio
 
 Adapted **GeoRT** to GaiaHand and PantheonHand through robot-specific fingertip keypoints and joint mappings. Computed offsets in each finger link's local frame and calibrated hand-size scaling to accommodate differences in human and robot geometry. Verified alignment and motion transfer through forward kinematics and SAPIEN replay.
 
-<video controls playsinline preload="none" poster="/images/projects/Stellar-Robot/retargeting-poster.jpg" style="width:100%;height:auto;" aria-label="GeoRT-based dexterous hand retargeting demonstration">
-  <source src="/files/Stellar-Robot/retargeting-demo.mp4" type="video/mp4">
-  <a href="/files/Stellar-Robot/retargeting-demo.mp4">Watch the hand retargeting demonstration</a>.
+<video controls playsinline preload="none" poster="/images/projects/Stellar-Robot/retargeting-poster-v2.jpg" style="width:100%;height:auto;" aria-label="GeoRT-based dexterous hand retargeting demonstration">
+  <source src="/files/Stellar-Robot/retargeting-demo-v2.mp4" type="video/mp4">
+  <a href="/files/Stellar-Robot/retargeting-demo-v2.mp4">Watch the hand retargeting demonstration</a>.
 </video>
 
 *Human-to-robot hand motion retargeting based on GeoRT.*
